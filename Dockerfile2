@@ -1,0 +1,2 @@
+FROM ubuntu
+RUN apt update && apt -y install openssh-server && /etc/init.d/ssh start && echo "root:20140310x" | chpasswd 
